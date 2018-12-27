@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "node"
+notifications:
+  webhooks: https://tbinna.ngrok.io/travis/notifications?token=a890cfe7-3518-3920-b0b5-6fa412a7f3d4
+  on_success: always
+  on_failure: always
+  on_start: always
+  on_cancel: always
+  on_error: always

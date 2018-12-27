@@ -1,0 +1,15 @@
+{
+  "name": "just-a-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/toolsplus/just-a-test.git",
+  "author": "Tobias Binna <tobias.binna@toolsplus.io>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "jshint index.js"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.7"
+  }
+}
