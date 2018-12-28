@@ -1,6 +1,9 @@
 language: node_js
+cache:
+  - yarn
+  - npm
 node_js:
-  - "node"
+- node
 notifications:
   webhooks: https://tbinna.ngrok.io/travis/notifications?token=a890cfe7-3518-3920-b0b5-6fa412a7f3d4
   on_success: always
@@ -8,3 +11,11 @@ notifications:
   on_start: always
   on_cancel: always
   on_error: always
+deploy:
+  provider: releases
+  api_key:
+    secure: gwLY8wYN1laGKCClgObhNvI1HE4gb4Y1drR5iDNfow8t6mHfqqVdVd7vO+bH219WAdEy/rhkTy4LyEGO2J+u5esF+8wieTVIueyzO6Vfqak+fPV6brkj9oRvR/6pyWP9i7uNulZvC6wQt956cCo3Ln857Fr3AgWiC5BWKJCRcdlAvN5ORKxMpFAhETYtUP41r2/ebmKmMoxYwm0es76wgWyRgXvFdYffcJyr+4CW3NacUHcSZS/4tg6sAWJD2ZUuQkWNY1grKDal5ohlxNONyYNPd22N/BfGe2Z81oDtbKEYOrp/J3Immu2w0uJYfYHvnsdT/4o+GbSdk5oILU4N9LP6AyZk5wwzI7TSY9Hw9zW6qCv6rQD/6hK2CCAxO3TnznKrXR8aWpCTIF3ETdhbuTyTMafvVrB0zFLFo/jop49pqMunRpcajIhz2msWniENJv+JvubJLyoGIaZA+4vg/VSumbIZDjtrFUyhgDGMeHmD8LI7JjfrMXEEz43HLkVWNolNUZY590gkbWCU8V2RqqW/9T+nMTAhl0cTQnj9dgE7rqZCn8/hKK6q+bFd40D4HYqAv0UWn5mU7zVzswuRV9ZkAR6kORIgKZmwClLtpEmBP2UYp4yQDkDm3ZffZTJMy9mNVafv3mPHD0f+fKNq0UPG+grk142qFlcvnf9r+nk=
+  file: 'dist/just-an-artifact.txt'
+  on:
+    repo: toolsplus/just-a-test
+    branch: master
