@@ -5,7 +5,7 @@ cache:
 node_js:
 - node
 notifications:
-  webhooks: https://travis-for-jira-staging.appspot.com/travis/notifications?token=7c848f37-be27-39b7-bb1e-386556de0d2c
+  webhooks: https://travis-for-jira-prod.toolsplus.app/travis/notifications?token=d2cb81e0-1484-304b-8e9d-e92e947ca6b1
   on_success: always
   on_failure: always
   on_start: always
